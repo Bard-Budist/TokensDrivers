@@ -4,13 +4,15 @@ App = {
 
   init: async function() {
     $.getJSON('../driver.json', function(data) {
-      var driverRow = $('#driverRow');
+      var driverRow = $('#petsRow');
       var driverTemplate = $('#petTemplate');
 
       for (i = 0; i < data.length; i ++) {
         driverTemplate.find('img').attr('src', data[i].pictures);
         driverTemplate.find('.pet-age').text(data[i].name);
         driverTemplate.find('.pet-location').text(data[i].time);
+        driverTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+        
 
         driverRow.append(driverTemplate.html());
       }
@@ -79,11 +81,10 @@ App = {
     });
   },
 
-  handleAdopt: function(event) {
+  handleDriver: function(event) {
     event.preventDefault();
 
     var driverId = parseInt($(event.target).data('id'));
-
     var driverInstance;
 
 web3.eth.getAccounts(function(error, accounts) {
@@ -93,7 +94,7 @@ web3.eth.getAccounts(function(error, accounts) {
 
   var account = accounts[0];
 
-  App.contracts.Adoption.deployed().then(function(instance) {
+  App.contracts.DriverP.deployed().then(function(instance) {
     driverInstance = instance;
 
     // Execute adopt as a transaction by sending account
