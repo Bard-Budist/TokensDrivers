@@ -10,22 +10,25 @@
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="initial-scale=1.0,
     width=device-width" />
-   
-    
-    
-</head> 
+</head>
 <body>
 
     <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
             <h3 class="w3-bar-item">Menu</h3>
             <form>
-                    Origen<br>
-                    <input type="text" name="firstname"><br>
+                <div class="form-group">
+                    Origen
+                    <br>
+                    <input class="form-control" type="text" name="firstname"><br>
+                </div>
+                <div class="form-group"></div>
                     Destino <br>
-                    <input type="text" name="lastname">
+                    <input type="text" name="lastname"  class="form-control">
+                  </div>
+
                     <br>
                     <button onclick="">Pay</button>
-                    
+                </div>
             </form>
     </div>
     <div style="margin-left:25%">
@@ -35,34 +38,29 @@
     <div id="petsRow" class="row">
             <!-- PETS LOAD HERE -->
           </div>
-            
             <div id="petTemplate" style="display: none;">
                     <div class="col-sm-6 col-md-4 col-lg-3">
                       <div class="panel panel-default panel-pet">
                         <div class="panel-heading">
-                          <h3 class="panel-title">Scrappy</h3>
+                          <h3 class="panel-title">Driver</h3>
                         </div>
                         <div class="panel-body">
                           <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" data-holder-rendered="true">
                           <br/><br/>
-                          <strong>Id</strong>: <span class="pet-breed">Golden Retriever</span><br/>
                           <strong>Name</strong>: <span class="pet-age">3</span><br/>
                           <strong>Time</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
-                          <button class="btn btn-default btn-adopt" type="button" data-id="0">Adopt</button>
+                          <button class="btn btn-default btn-adopt" type="button" data-id="0">Contract</button>
                         </div>
                       </div>
                     </div>
             </div>
-          
-
-
-    <script>
+<!--     <script>
         var x = document.getElementById("demo");
 
         function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
-        } else { 
+        } else {
             x.innerHTML = "Geolocation is not supported by this browser.";
         }
         }
@@ -71,7 +69,7 @@
         x.innerHTML = "Latitude: " + position.coords.latitude + 
         "<br>Longitude: " + position.coords.longitude;
         }
-    </script>
+    </script> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
