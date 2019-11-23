@@ -7,32 +7,26 @@
     },
     {
         "id": 1,
-        "name": "Elon Musk",
+        "name": "Mark",
         "pictures": "images/mark.jpeg",
-        "time": "1 minute ago"
+        "time": "2 minute ago"
     },
     {
         "id": 2,
-        "name": "Elon Musk",
-        "pictures": "images/elon.jpg",
-        "time": "1 minute ago"
+        "name": "Bill Gates",
+        "pictures": "images/bill.jpg",
+        "time": "6 minute ago"
     },
     {
         "id": 3,
-        "name": "Elon Musk",
-        "pictures": "images/mark.jpeg",
-        "time": "1 minute ago"
+        "name": "Belly Holberton",
+        "pictures": "images/betty.jpg",
+        "time": "10 minute ago"
     },
     {
         "id": 4,
-        "name": "Elon Musk",
-        "pictures": "images/elon.jpg",
-        "time": "1 minute ago"
-    },
-    {
-        "id": 5,
-        "name": "Elon Musk",
-        "pictures": "images/mark.jpeg",
-        "time": "1 minute ago"
+        "name": "Aaron Swarts",
+        "pictures": "images/Aaron.jpg",
+        "time": "12 minute ago"
     }
 ]
